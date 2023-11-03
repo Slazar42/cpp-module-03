@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 08:02:25 by slazar            #+#    #+#             */
-/*   Updated: 2023/11/02 05:53:50 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/02 22:04:03 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@ ClapTrap::ClapTrap() : name("default"), hit_points(10), energy_points(10), attac
 
 ClapTrap::ClapTrap(std::string n) : name(n), hit_points(10), energy_points(10), attack_damage(0)
 {
-	std::cout<<"ClapTrap \""<<name<<"\" constructor called"<<std::endl;
+	std::cout << "ClapTrap constructor called with name : \""<<name<<"\"" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &obj)
 {
-	std::cout<<"ClapTrap copy constructor called"<<std::endl;
+	std::cout<<"ClapTrap copy constructor called to copy from \""<<obj.name<<"\""<<std::endl;
 	*this = obj;
 }
 
 ClapTrap::~ClapTrap()
 {
-	std::cout<<"ClapTrap destructor called"<<std::endl;
+	std::cout<<"ClapTrap destructor called from \""<<name<<"\""<<std::endl;
 }
 
 ClapTrap	&ClapTrap::operator=(const ClapTrap &obj){
@@ -69,5 +69,3 @@ void		ClapTrap::beRepaired(unsigned int amount)
 	hit_points += amount;
 	energy_points -= 1;
 }
-
-void

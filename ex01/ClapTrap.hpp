@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 07:48:59 by slazar            #+#    #+#             */
-/*   Updated: 2023/11/02 03:30:17 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/02 20:56:49 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ class ClapTrap{
 		ClapTrap(const ClapTrap &obj);
 		~ClapTrap();
 		ClapTrap	&operator=(const ClapTrap &obj);
-	
-		void		attack(const std::string& target);
-		void		takeDamage(unsigned int amount);
-		void		beRepaired(unsigned int amount);
+
+		void				attack(const std::string& target);
+		void				takeDamage(unsigned int amount);
+		void				beRepaired(unsigned int amount);
 };
 
 #endif

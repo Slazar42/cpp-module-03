@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 08:34:26 by slazar            #+#    #+#             */
-/*   Updated: 2023/11/02 03:52:51 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/03 02:26:46 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,16 @@
 
 int main(){
 	ScavTrap scavTrap("ScavTrap");
-	ScavTrap scavTrap2(scavTrap);
-	ScavTrap scavTrap3;
-	scavTrap3 = scavTrap2;
+	ClapTrap clapTrap("ClapTrap");
+
+	std::cout << std::endl;
 	scavTrap.attack("target");
-	scavTrap.takeDamage(10);
-	scavTrap.beRepaired(10);
+	scavTrap.takeDamage(5);
+	scavTrap.beRepaired(5);
 	scavTrap.guardGate();
-	return (0);
+	std::cout << std::endl;
+	clapTrap.attack("target");
+	clapTrap.takeDamage(5);
+	clapTrap.beRepaired(5);
+	std::cout << std::endl;
 }
