@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 01:43:58 by slazar            #+#    #+#             */
-/*   Updated: 2023/11/03 02:12:23 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/04 21:07:20 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ScavTrap::ScavTrap()
 {
-	name = "defaultFromScavTrap";
+	name = "Default";
 	std::cout << "ScavTrap default constructor called" << std::endl;
 	hit_points = 100;
 	energy_points = 50;

@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 00:23:20 by slazar            #+#    #+#             */
-/*   Updated: 2023/11/03 02:20:35 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/04 21:07:41 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 FragTrap::FragTrap()
 {
-	name = "defaultFromFragTrap";
+	name = "Default";
 	std::cout << "FragTrap default constructor called" << std::endl;
 	hit_points = 100;
 	energy_points = 100;

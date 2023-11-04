@@ -6,15 +6,17 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 01:43:58 by slazar            #+#    #+#             */
-/*   Updated: 2023/11/03 02:13:08 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/05 00:08:48 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
+const int	ScavTrap::energy_pts = 50;
+
 ScavTrap::ScavTrap()
 {
-	name = "defaultFromScavTrap";
+	name = "Default";
 	std::cout << "ScavTrap default constructor called" << std::endl;
 	hit_points = 100;
 	energy_points = 50;
